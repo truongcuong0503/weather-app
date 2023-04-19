@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.weather-app {
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1C3879;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.weather-app__header {
+    width: 100%;
+    height: 10%;
+    background-color: #607EAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app__header__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #F9F5EB;
+}
+
+.weather-app__main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.weather-app__main__search-form {
+    height: 20%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.weather-app__main__search-form__city-name {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 70%;
+}
+
+.weather-app__main__search-form__submit {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 29%;
+    margin-left: 1%;
+}
+
+.weather-app__main__current-location-weather {
+    border-radius: 5rem;
+    height: 50%;
+    width: 50%;
+    text-transform: capitalize;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAE3D2;
+    color: #1C3879;
+    font-size: 3rem;
+}
+
+.weather-app__main__current-location-weather p {
+    width: 70%;
+    text-align: left;
+    border: .1rem solid black;
+}
